@@ -1,3 +1,3 @@
 function (ctx, args) {
-    print("punk.this {} called");
+    return { ok:true, msg:"punk.this {} called" };
 }
