@@ -1,17 +1,17 @@
 # Example config for punk (edit and save as config.yaml)
-log_path: /path/to/hackmud/log.txt           # path to the game's log file
-poll_interval: 0.5                            # seconds between polling checks (or use watchdog events)
-send_method: tmux                             # options: tmux, xdotool, dry-run
+shell_path: ~/.config/hackmud/shell.txt      # path to the game's shell log file
+poll_interval: 0.5                           # seconds between polling checks (or use watchdog events)
+send_method: tmux                            # options: tmux, xdotool, dry-run
 tmux:
   session: hackmud
   window: 1
   pane: 0
 xdotool:
-  window_name: "Hackmud - Game Window"       # substring of X window name
+  window_name: "hackmud"
 handlers:
   - name: example
     enabled: true
 ai:
   enabled: false
   provider: openai
-  api_key: ""                                 # if you integrate an AI provider later
+  api_key: ""
